@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0c0d0e">
-    <meta name="description" content="Андрей Шилин — репетитор по математике и информатике для 5–9 классов. Онлайн и в Туле. Формат занятий, стоимость, цифровые проекты и контакты.">
+    <meta name="description" content="Андрей Шилин: репетиторство по математике и информатике, разработка и дизайн, совместные тренировки. Обо мне, проекты, форматы помощи и стоимость.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
-    <meta property="og:title" content="Андрей Шилин — понять, а не просто запомнить">
-    <meta property="og:description" content="Математика и информатика для школьников. Знакомство, условия занятий и проекты.">
+    <meta property="og:title" content="Андрей Шилин — учёба, разработка и тренировки">
+    <meta property="og:description" content="Объясняю сложное, создаю цифровые проекты и делюсь опытом тренировок. Знакомство, услуги и контакты.">
     <meta property="og:image" content="https://ShilinAndreuQrty.github.io/assets/hero-poster.png">
-    <title>Андрей Шилин — математика, информатика и digital-проекты</title>
+    <title>Андрей Шилин — учёба, разработка и тренировки</title>
     <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -21,7 +21,9 @@
       <a class="wordmark" href="#" aria-label="Андрей Шилин — в начало">SHILIN<span>.</span></a>
       <button class="menu-toggle" aria-label="Меню" aria-expanded="false" aria-controls="navigation" hidden><span class="menu-label">Меню</span> <span class="menu-icon" aria-hidden="true"></span></button>
       <nav id="navigation" aria-label="Основная навигация">
-        <a href="#about">Обо мне</a><a href="#lessons">Учёба</a><a href="#project">Разработка</a><a href="#sport">Тренировки</a><a href="#contacts">Контакты</a>
+        <a class="nav-about" href="#about">Обо мне</a>
+        <span class="nav-services"><a href="#lessons">Учёба</a><a href="#project">Разработка</a><a href="#sport">Тренировки</a></span>
+        <a class="nav-contacts" href="#contacts">Контакты</a>
       </nav>
       <a class="header-contact" href="https://t.me/Shilin_qrty"><svg class="icon icon-telegram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 3-6.5 18-4-7.5L3 10l18-7ZM21 3 10.5 13.5"/></svg><span>Telegram</span></a>
     </header>
@@ -40,16 +42,16 @@
           </figure>
           <div class="hero-copy">
             <p class="eyebrow">
-              Андрей Шилин <span>·</span> Репетитор по математике и информатике
+              Андрей Шилин <span>·</span> Учёба, проекты и спорт
             </p>
             <h1 id="hero-title">
-              <span class="heading-line">Помогаю</span> <span class="heading-line">разобраться,</span> <em><span class="heading-line">а не просто</span> <span class="heading-line">запомнить.</span></em>
+              <span class="heading-line">Разбираюсь.</span> <span class="heading-line">Создаю.</span> <em><span class="heading-line">Помогаю</span> <span class="heading-line">расти.</span></em>
             </h1>
             <p class="hero-description">
-              Занимаюсь математикой и информатикой со школьниками <span class="nowrap">5–9</span> классов: помогаю закрывать пробелы, понимать темы и готовиться к контрольным и экзаменам. Со старшеклассниками работаю по согласованным темам и задачам.
+              Объясняю математику и информатику, создаю сайты и приложения, делюсь опытом тренировок. Помогаю освоить тему, воплотить идею или начать двигаться к своей цели.
             </p>
             <div class="actions">
-              <a class="button button-gold" href="https://t.me/Shilin_qrty">Обсудить занятия <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><a class="text-link" href="#pricing">Формат и стоимость <svg class="icon icon-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+              <a class="button button-gold" href="https://t.me/Shilin_qrty">Обсудить задачу <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><a class="text-link" href="#about">Подробнее <svg class="icon icon-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
             </div>
           </div>
         </div>
@@ -67,10 +69,10 @@
             Я Андрей, студент ТулГУ по специальности «Искусственный интеллект в технических системах».
           </p>
           <p>
-            Мне нравится разбираться в сложных вещах и помогать другим понимать их. Я активист профбюро Института прикладной математики и компьютерных наук и курирую группу первокурсников: помогаю освоиться, отвечаю на организационные вопросы и спокойно возвращаюсь к тому, что осталось непонятным.
+            Совмещаю репетиторство, разработку и графический дизайн: мне интересно и найти решение, и сделать его понятным. В ИПМКН курирую первокурсников и участвую в жизни профбюро — помогаю ребятам освоиться в университете.
           </p>
           <p>
-            В занятиях придерживаюсь того же принципа: можно задавать вопросы, ошибаться и пробовать другое объяснение. Важно, чтобы со временем ученик мог разобраться и решить задачу самостоятельно.
+            Вне учёбы и проектов — воркаут, зал и пробежки. Регулярные тренировки научили меня ценить постепенный прогресс. Этот же подход близок мне в работе: пробовать, замечать ошибки и шаг за шагом становиться лучше.
           </p>
         </div>
         <div class="about-side">
@@ -80,11 +82,11 @@
             </div>
           </figure>
         </div>
-        <ul class="about-facts" aria-label="Образование и опыт">
+        <ul class="about-facts" aria-label="Образование, опыт и личные достижения">
           <li><strong>Аттестат с отличием</strong><span>и серебряная медаль</span></li>
-          <li><strong>Олимпиады</strong><span>Участие по математике и информатике</span></li>
-          <li><strong>Хакатоны и проекты</strong><span>Участие в хакатонах и опыт руководства проектами</span></li>
-          <li><strong>Графический дизайн</strong><span>Диплом об образовании</span></li>
+          <li><strong>Призовые места</strong><span>Олимпиады по математике и информатике</span></li>
+          <li><strong>Хакатоны и проекты</strong><span>Участие в хакатонах и опыт командной разработки</span></li>
+          <li><strong>Образование в дизайне</strong><span>Диплом по графическому дизайну</span></li>
         </ul>
       </section>
       <section id="lessons" class="section lessons" aria-labelledby="lessons-title">
@@ -252,8 +254,9 @@
             <p>
               Разрабатываю сайты, ботов и небольшие приложения, создаю презентации и визуальные материалы. Соединяю программирование, графический дизайн и AI-инструменты под конкретную задачу.
             </p>
-            <p class="small">
-              Стоимость — после обсуждения задачи.
+            <p class="development-price">
+              <strong>Лендинг — от 8 000 ₽</strong>
+              <span>Другие проекты — после обсуждения задачи.</span>
             </p>
           </div>
         </div>
@@ -301,7 +304,7 @@
               <p class="small muted">
                 В создании и поддержке материалов участвует тьюторское сообщество ИПМКН. Когда готового ответа недостаточно, сообщество помогает направить вопрос к человеку.
               </p>
-              <a class="text-link" href="https://t.me/Shilin_qrty">Обсудить проект <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+              <a class="button button-gold" href="https://t.me/Shilin_qrty">Обсудить проект <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
             </div>
             <div class="project-gallery" role="region" aria-roledescription="карусель" aria-label="Экраны ИПМКН Старт">
               <div class="carousel-track" id="app-screens" tabindex="0" aria-label="Скриншоты приложения — прокрутка по горизонтали">
@@ -344,7 +347,7 @@
             <div class="direction-label">
               <span class="small-label">04 / ТРЕНИРОВКИ</span>
               <h2 id="sport-title">
-                Тренировки <br><em>и сопровождение.</em>
+                Тренируемся <br><em>и растём вместе.</em>
               </h2>
               <div class="training-progress" role="group" aria-label="Мой прогресс в тренировках: 2023, 2025 и 2026 годы">
                 <figure class="progress-photo">
@@ -363,35 +366,49 @@
             </div>
             <div class="direction-main">
               <p>
-                Активно занимаюсь воркаутом и дополняю тренировки занятиями в зале. Предлагаю совместные занятия и сопровождение: помочь определиться с целью, составить план, поддерживать регулярность и отслеживать прогресс.
+                Тренируюсь с лета 2023 года: сочетаю воркаут, зал и бег. Сейчас при росте 186 см вешу около 71 кг. Моя цель — выполнить нормативы КМС, а затем МС в дисциплинах воркаута.
               </p>
+              <dl class="training-results" aria-label="Мои текущие результаты">
+                <div><dt>Жим лёжа</dt><dd>90 <span>кг</span></dd></div>
+                <div><dt>Подтягивания</dt><dd>+32 <span>кг × 10</span></dd></div>
+                <div><dt>Спокойная пробежка</dt><dd>10 <span>км</span></dd></div>
+              </dl>
+              <p class="training-format">Я не квалифицированный тренер. Мой формат — товарищ по тренировкам и внешняя дисциплина: для тех, кому не хватает системы, регулярности и человека рядом, чтобы не бросать начатое.</p>
               <ul class="clean-list training-list">
                 <li>
-                  Совместные занятия в фитнес-клубе «В форме»
+                  Помогаю организовать тренировки и отслеживать нагрузку
                 </li>
                 <li>
-                  План тренировок с учётом цели и текущей подготовки
+                  Делюсь личным опытом набора веса и восстановления
                 </li>
                 <li>
-                  Внимание к технике выполнения упражнений
-                </li>
-                <li>
-                  Отслеживание нагрузки, регулярности и прогресса
-                </li>
-                <li>
-                  Помощь с организацией повседневного питания под тренировочные цели
-                </li>
-                <li>
-                  При желании — сочетание зала и уличного воркаута
+                  Помогаю составить и соблюдать план питания под цель и привычный режим.
                 </li>
               </ul>
-              <p>
-                Начинаю работать с подопечными, опираясь на собственный тренировочный опыт.
-              </p>
-              <p class="muted small">
-                Филиал, расписание, формат сопровождения и стоимость обсудим лично. Возможность совместных занятий в выбранном филиале предварительно уточняется.
-              </p>
-              <a class="text-link" href="https://t.me/Shilin_qrty">Обсудить тренировки <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            </div>
+          </div>
+          <div class="pricing training-pricing" aria-labelledby="training-pricing-title">
+            <div class="pricing-heading">
+              <p class="section-label">ФОРМАТ И СТОИМОСТЬ</p>
+              <h3 id="training-pricing-title">Система.<br> Регулярность.<br> <em>Поддержка.</em></h3>
+              <p>Для тех, кто хочет сделать тренировки частью своей жизни.</p>
+            </div>
+            <div class="pricing-content">
+              <dl class="training-offers">
+                <div class="training-offer primary-offer">
+                  <dt><strong>Сопровождение</strong><span>Обсуждаем цель и составляем план. Поддерживаем связь, следим за регулярностью, нагрузкой и прогрессом. Корректируем план по ходу работы.</span></dt>
+                  <dd>от 4 000 ₽<span>/ месяц</span></dd>
+                </div>
+                <div class="training-offer">
+                  <dt><strong>Совместная тренировка</strong><span>Тренируемся вместе в зале или на воркаут-площадке. У меня есть абонемент в сеть «В Форме» — можем выбрать удобный филиал.</span></dt>
+                  <dd>1 000 ₽</dd>
+                </div>
+              </dl>
+              <p class="pricing-note">Стоимость сопровождения зависит от объёма работы. В клубах «В Форме» мой вход не требует доплаты; в другом фитнес-клубе при необходимости отдельно оплачивается моё разовое посещение.</p>
+            </div>
+            <div class="training-pricing-footer">
+              <p>Беру ограниченное число людей для регулярной работы. Перед началом обсудим вашу цель и поймём, подходит ли нам такой формат.</p>
+              <a class="button button-gold" href="https://t.me/Shilin_qrty">Обсудить тренировки <svg class="icon icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
             </div>
           </div>
         </div>
@@ -409,7 +426,7 @@
               Хотите договориться о занятиях, обсудить тренировки или предложить проект? Напишите, с чем нужна помощь.
             </p>
             <p class="contact-prompt">
-              По занятиям — класс, предмет и цель. <br>По другим задачам — краткое описание и желаемый срок.
+              Для учёбы — предмет и класс. Для проекта — идея и срок. Для тренировок — цель и текущий опыт.
             </p>
           </div>
           <div class="contact-links">
