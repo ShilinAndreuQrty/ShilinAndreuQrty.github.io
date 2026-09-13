@@ -42,7 +42,21 @@ let playbackRequested = !reducedMotion.matches && !navigator.connection?.saveDat
 let videoVisible = true;
 video.controls = false;
 
+function showVideoFallback() {
+  if (!video.isConnected) return;
+  const poster = document.createElement('img');
+  poster.className = 'hero-video-fallback';
+  poster.src = video.poster;
+  poster.alt = 'Андрей Шилин с ноутбуком';
+  poster.width = 560;
+  poster.height = 720;
+  video.replaceWith(poster);
+}
+video.addEventListener('error', showVideoFallback, true);
+if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) showVideoFallback();
+
 function syncPlayback() {
+  if (!video.isConnected) return;
   if (playbackRequested && videoVisible && !document.hidden) {
     video.play().catch(() => { /* Keep the poster if autoplay is blocked. */ });
   } else {

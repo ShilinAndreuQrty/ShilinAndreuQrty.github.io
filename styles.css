@@ -286,7 +286,7 @@ nav a:hover,nav a[aria-current="location"] {
   box-shadow: 0 22px 60px #0003,inset 0 1px 0 #ffffff08;
 }
 
-.video-frame video {
+.video-frame video, .video-frame .hero-video-fallback {
   width: 100%;
   height: auto;
   background: #161616;
@@ -1116,7 +1116,7 @@ p, li, dt, dd { text-wrap: pretty; }
   background-size: 100px 100px;
   mask-image: linear-gradient(transparent 20%, black 80%, transparent);
 }
-.video-frame video { width: 100%; height: auto; aspect-ratio: 560 / 720; object-fit: contain; }
+.video-frame video, .video-frame .hero-video-fallback { width: 100%; height: auto; aspect-ratio: 560 / 720; object-fit: contain; }
 .hero-visual figcaption { font-size: 12px; letter-spacing: .09em; color: var(--gold); margin-top: 21px; }
 .hero-description { max-width: 540px; }
 .hero-divider { position: relative; height: 1px; margin-top: 54px; background: linear-gradient(90deg, #ffffff32, #ffffff0c); }
@@ -1486,7 +1486,7 @@ p, li, dt, dd { text-wrap: pretty; }
     padding: 6px;
     border-radius: 23px;
   }
-  .video-frame video {
+  .video-frame video, .video-frame .hero-video-fallback {
     border-radius: 17px;
   }
   .hero-visual figcaption {
